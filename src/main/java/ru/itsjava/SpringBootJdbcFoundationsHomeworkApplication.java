@@ -30,6 +30,8 @@ public class SpringBootJdbcFoundationsHomeworkApplication {
         updatedUser.setId(1L);
         userDao.updateUser(updatedUser);
 
+        System.out.println("studentDao.findById(1L) = " + userDao.findById(1L));
+
         userDao.delete(updatedUser);
         System.out.println("userDao.count() = " + userDao.count());
 
