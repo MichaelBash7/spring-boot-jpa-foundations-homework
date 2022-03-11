@@ -6,7 +6,7 @@ public interface UserDao {
 
     int count();
 
-    void insert(User user);
+    long insert(User user);
 
     void update(User user);
 

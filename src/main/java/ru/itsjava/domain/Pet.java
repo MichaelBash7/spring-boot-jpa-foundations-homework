@@ -4,12 +4,10 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
 
-@Data
 @RequiredArgsConstructor
+@Data
 @AllArgsConstructor
-public class User {
+public class Pet {
     private long id;
-    private final String name;
-    private final int age;
-    private final Pet pet;
+    private final String species;
 }
