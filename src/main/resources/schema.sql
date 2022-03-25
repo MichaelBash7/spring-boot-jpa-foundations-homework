@@ -1,15 +1,13 @@
-DROP TABLE IF EXISTS user, pets;
+DROP TABLE IF EXISTS PET, USER;
 
-CREATE TABLE user(
-        id BIGINT PRIMARY KEY AUTO_INCREMENT,
-        name VARCHAR(256),
-        age INT,
-        pet_id BIGINT
+CREATE TABLE PET(
+        ID BIGINT PRIMARY KEY AUTO_INCREMENT,
+        SPECIES VARCHAR(256)
 );
 
-CREATE TABLE pets(
-        id BIGINT PRIMARY KEY AUTO_INCREMENT,
-        species VARCHAR(256)
+CREATE TABLE USER(
+        ID BIGINT PRIMARY KEY AUTO_INCREMENT,
+        NAME VARCHAR(256),
+        AGE INT,
+        PET_ID BIGINT REFERENCES PET(ID)
 );
-
-ALTER TABLE user add foreign key (pet_id) references pets(id);

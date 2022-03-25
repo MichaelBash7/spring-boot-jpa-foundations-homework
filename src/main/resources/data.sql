@@ -1,8 +1,9 @@
-INSERT INTO pets(id, species) VALUES (1, 'Dog');
-INSERT INTO pets(id, species) VALUES (2, 'Cat');
 
+INSERT INTO PET(ID, SPECIES) VALUES (1, 'Dog');
+INSERT INTO PET(ID, SPECIES) VALUES (2, 'Cat');
 
-INSERT INTO user(id, name, age, pet_id) VALUES (1, 'Misha', 27, 1);
-INSERT INTO user(id, name, age, pet_id) VALUES (2, 'Anna', 24, 1);
-INSERT INTO user(id, name, age, pet_id) VALUES (3, 'Andrey', 32, 1);
-INSERT INTO user(id, name, age, pet_id) VALUES (4, 'Tanya', 45, 2);
+INSERT INTO USER(ID, NAME, AGE, PET_ID) VALUES (1, 'Misha', 27, 1);
+INSERT INTO USER(ID, NAME, AGE, PET_ID) VALUES (2, 'Anna', 24, 1);
+INSERT INTO USER(ID, NAME, AGE, PET_ID) VALUES (3, 'Andrey', 32, 1);
+INSERT INTO USER(ID, NAME, AGE, PET_ID) VALUES (4, 'Tanya', 45, 2);
+
