@@ -18,4 +18,9 @@ public class UserRepositoryImpl implements UserRepository{
     public List<User> findAll() {
         return entityManager.createQuery("select distinct u from user u join fetch u.pet", User.class).getResultList();
     }
+
+    @Override
+    public User getById(long id) {
+        return entityManager.find(User.class, id);
+    }
 }

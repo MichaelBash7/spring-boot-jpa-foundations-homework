@@ -12,7 +12,7 @@ import java.sql.SQLException;
 
 
 @SpringBootApplication
-class SpringBootJpaFoundationsHomeworkApplication {
+public class SpringBootJpaFoundationsHomeworkApplication {
 
     public static void main(String[] args) throws SQLException {
         ApplicationContext context = SpringApplication.run(SpringBootJpaFoundationsHomeworkApplication.class,args);
