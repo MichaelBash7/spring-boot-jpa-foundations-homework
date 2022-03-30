@@ -5,12 +5,14 @@ import org.springframework.stereotype.Repository;
 import ru.itsjava.domain.Pet;
 
 import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 import javax.transaction.Transactional;
 
 @Repository
 @RequiredArgsConstructor
 @Transactional
 public class PetRepositoryImpl implements PetRepository{
+    @PersistenceContext
     private final EntityManager entityManager;
 
     @Override

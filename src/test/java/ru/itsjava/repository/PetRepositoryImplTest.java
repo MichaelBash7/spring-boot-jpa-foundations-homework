@@ -13,8 +13,6 @@ import javax.persistence.PersistenceContext;
 @DataJpaTest
 @Import(PetRepositoryImpl.class)
 public class PetRepositoryImplTest {
-    @PersistenceContext
-    private EntityManager entityManager;
 
     @Autowired
     private PetRepository petRepository;
